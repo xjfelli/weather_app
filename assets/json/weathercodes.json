@@ -1,0 +1,283 @@
+{
+    "0": {
+      "day": {
+        "description": "Céu limpo",
+        "image": "http://openweathermap.org/img/wn/01d@2x.png"
+      },
+      "night": {
+        "description": "Céu limpo",
+        "image": "http://openweathermap.org/img/wn/01n@2x.png"
+      }
+    },
+    "1": {
+      "day": {
+        "description": "Principalmente limpo",
+        "image": "http://openweathermap.org/img/wn/01d@2x.png"
+      },
+      "night": {
+        "description": "Principalmente limpo",
+        "image": "http://openweathermap.org/img/wn/01n@2x.png"
+      }
+    },
+    "2": {
+      "day": {
+        "description": "Parcialmente nublado",
+        "image": "http://openweathermap.org/img/wn/02d@2x.png"
+      },
+      "night": {
+        "description": "Parcialmente nublado",
+        "image": "http://openweathermap.org/img/wn/02n@2x.png"
+      }
+    },
+    "3": {
+      "day": {
+        "description": "Nublado",
+        "image": "http://openweathermap.org/img/wn/03d@2x.png"
+      },
+      "night": {
+        "description": "Nublado",
+        "image": "http://openweathermap.org/img/wn/03n@2x.png"
+      }
+    },
+    "45": {
+      "day": {
+        "description": "Neblina",
+        "image": "http://openweathermap.org/img/wn/50d@2x.png"
+      },
+      "night": {
+        "description": "Neblina",
+        "image": "http://openweathermap.org/img/wn/50n@2x.png"
+      }
+    },
+    "48": {
+      "day": {
+        "description": "Neblina congelante",
+        "image": "http://openweathermap.org/img/wn/50d@2x.png"
+      },
+      "night": {
+        "description": "Neblina congelante",
+        "image": "http://openweathermap.org/img/wn/50n@2x.png"
+      }
+    },
+    "51": {
+      "day": {
+        "description": "Chuvisco fraco",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuvisco fraco",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "53": {
+      "day": {
+        "description": "Chuvisco moderado",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuvisco moderado",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "55": {
+      "day": {
+        "description": "Chuvisco denso",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuvisco denso",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "56": {
+      "day": {
+        "description": "Chuvisco congelante fraco",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuvisco congelante fraco",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "57": {
+      "day": {
+        "description": "Chuvisco congelante denso",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuvisco congelante denso",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "61": {
+      "day": {
+        "description": "Chuva fraca",
+        "image": "http://openweathermap.org/img/wn/10d@2x.png"
+      },
+      "night": {
+        "description": "Chuva fraca",
+        "image": "http://openweathermap.org/img/wn/10n@2x.png"
+      }
+    },
+    "63": {
+      "day": {
+        "description": "Chuva moderada",
+        "image": "http://openweathermap.org/img/wn/10d@2x.png"
+      },
+      "night": {
+        "description": "Chuva moderada",
+        "image": "http://openweathermap.org/img/wn/10n@2x.png"
+      }
+    },
+    "65": {
+      "day": {
+        "description": "Chuva forte",
+        "image": "http://openweathermap.org/img/wn/10d@2x.png"
+      },
+      "night": {
+        "description": "Chuva forte",
+        "image": "http://openweathermap.org/img/wn/10n@2x.png"
+      }
+    },
+    "66": {
+      "day": {
+        "description": "Chuva congelante fraca",
+        "image": "http://openweathermap.org/img/wn/10d@2x.png"
+      },
+      "night": {
+        "description": "Chuva congelante fraca",
+        "image": "http://openweathermap.org/img/wn/10n@2x.png"
+      }
+    },
+    "67": {
+      "day": {
+        "description": "Chuva congelante forte",
+        "image": "http://openweathermap.org/img/wn/10d@2x.png"
+      },
+      "night": {
+        "description": "Chuva congelante forte",
+        "image": "http://openweathermap.org/img/wn/10n@2x.png"
+      }
+    },
+    "71": {
+      "day": {
+        "description": "Queda de neve fraca",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Queda de neve fraca",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "73": {
+      "day": {
+        "description": "Queda de neve moderada",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Queda de neve moderada",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "75": {
+      "day": {
+        "description": "Queda de neve forte",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Queda de neve forte",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "77": {
+      "day": {
+        "description": "Granizo",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Granizo",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "80": {
+      "day": {
+        "description": "Chuva com pancadas leves",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuva com pancadas leves",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "81": {
+      "day": {
+        "description": "Chuva com pancadas moderadas",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuva com pancadas moderadas",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "82": {
+      "day": {
+        "description": "Chuva com pancadas violentas",
+        "image": "http://openweathermap.org/img/wn/09d@2x.png"
+      },
+      "night": {
+        "description": "Chuva com pancadas violentas",
+        "image": "http://openweathermap.org/img/wn/09n@2x.png"
+      }
+    },
+    "85": {
+      "day": {
+        "description": "Queda de neve com pancadas leves",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Queda de neve com pancadas leves",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "86": {
+      "day": {
+        "description": "Queda de neve com pancadas pesadas",
+        "image": "http://openweathermap.org/img/wn/13d@2x.png"
+      },
+      "night": {
+        "description": "Queda de neve com pancadas pesadas",
+        "image": "http://openweathermap.org/img/wn/13n@2x.png"
+      }
+    },
+    "95": {
+      "day": {
+        "description": "Tempestade fraca ou moderada",
+        "image": "http://openweathermap.org/img/wn/11d@2x.png"
+      },
+      "night": {
+        "description": "Tempestade fraca ou moderada",
+        "image": "http://openweathermap.org/img/wn/11n@2x.png"
+      }
+    },
+    "96": {
+      "day": {
+        "description": "Tempestade com granizo fraco",
+        "image": "http://openweathermap.org/img/wn/11d@2x.png"
+      },
+      "night": {
+        "description": "Tempestade com granizo fraco",
+        "image": "http://openweathermap.org/img/wn/11n@2x.png"
+      }
+    },
+    "99": {
+      "day": {
+        "description": "Tempestade com granizo forte",
+        "image": "http://openweathermap.org/img/wn/11d@2x.png"
+      },
+      "night": {
+        "description": "Tempestade com granizo forte",
+        "image": "http://openweathermap.org/img/wn/11n@2x.png"
+      }
+    }
+  }
+  
