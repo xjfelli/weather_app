@@ -10,6 +10,7 @@ import 'package:weather_app/app/extensions/log/log_impl_extension.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences_impl.dart';
 import 'package:weather_app/app/features/home/home_module.dart';
+import 'package:weather_app/app/features/splash/splash_module.dart';
 
 class AppModule extends Module {
   @override
@@ -24,6 +25,7 @@ class AppModule extends Module {
 
   @override
   void routes(r) {
-    r.module('/', module: HomeModule());
+    r.module('/', module: SplashModule());
+    r.module('/home', module: HomeModule());
   }
 }
