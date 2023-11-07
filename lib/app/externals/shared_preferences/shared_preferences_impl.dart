@@ -43,4 +43,15 @@ class SharedPreferencesImpl implements ISharedPreferences {
           .toFailure();
     }
   }
+
+  @override
+  AsyncResult<bool, Exception> deleteAll() async {
+    final response = await _sp.clear();
+
+    if (!response) {
+      return Exception('$runtimeType failed to clear storage').toFailure();
+    }
+
+    return response.toSuccess();
+  }
 }

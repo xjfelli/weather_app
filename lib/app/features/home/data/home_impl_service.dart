@@ -1,16 +1,19 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather_app/app/extensions/location/location_extension.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
-import 'package:weather_app/app/features/interactor/entities/weather_model.dart';
-import 'package:weather_app/app/features/interactor/states/weather.states.dart';
+import 'package:weather_app/app/features/home/interactor/entities/weather_current_model.dart';
+import 'package:weather_app/app/features/home/interactor/entities/weather_hourly_model.dart';
+import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
+import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
 
-import '../../extensions/http/http_extension.dart';
+import '../../../extensions/http/http_extension.dart';
 
 import '../interactor/services/home_service.dart';
 
 class HomeImplService implements HomeService {
   final String? _baseAPI = dotenv.env['BASE_API'];
-  final _defaultParamsURL = 'current=temperature_2m,weathercode';
+  final _defaultParamsURL =
+      'current=temperature_2m,is_day,weathercode&hourly=temperature_2m,weathercode';
 
   final HttpExtension _httpExtension;
   final LocationExtension _locationExtension;
@@ -38,7 +41,9 @@ class HomeImplService implements HomeService {
         }
 
         final weather = WeatherEntity(
-            current: Current.fromMap(response.data['current']),
+            currentWeather:
+                WeatherCurrentModel.fromMap(response.data['current']),
+            hourly: WeatherHourlyModel.fromMap(response.data['hourly']),
             position: success.position,
             placemark: success.placemark);
 
@@ -46,12 +51,9 @@ class HomeImplService implements HomeService {
 
         return WeatherSuccessState(weather);
       }, (failure) {
-        print(failure);
         return const WeatherErrorState();
       });
     } catch (e) {
-      print(e);
-
       return const WeatherErrorState();
     }
   }

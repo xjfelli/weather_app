@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:weather_app/app/extensions/location/location_extension.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
-import 'package:weather_app/app/features/interactor/entities/weather_model.dart';
-import 'package:weather_app/app/features/interactor/events/weather_event.dart';
-import 'package:weather_app/app/features/interactor/services/home_service.dart';
-import 'package:weather_app/app/features/interactor/states/weather.states.dart';
+import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
+import 'package:weather_app/app/features/home/interactor/events/weather_event.dart';
+import 'package:weather_app/app/features/home/interactor/services/home_service.dart';
+import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
 
 class HomeBloc extends Bloc<WeatherEvent, WeatherState> {
   final HomeService service;

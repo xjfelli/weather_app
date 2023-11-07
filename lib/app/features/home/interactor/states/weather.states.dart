@@ -1,4 +1,4 @@
-import 'package:weather_app/app/features/interactor/entities/weather_model.dart';
+import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
 
 sealed class WeatherState {
   const WeatherState();
