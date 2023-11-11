@@ -1,5 +1,4 @@
 import 'package:geocoding/geocoding.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:result_dart/result_dart.dart';
 import 'package:weather_app/app/extensions/location/location_entity.dart';
 
