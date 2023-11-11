@@ -3,12 +3,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:weather_app/app/features/home/adapter/weather_adapter.dart';
-import 'package:weather_app/app/features/home/interactor/UI/widgets/home_header_widget.dart';
-import 'package:weather_app/app/features/home/interactor/UI/widgets/home_hourly_time_widget.dart';
+import 'package:weather_app/app/features/home/UI/widgets/home_header_widget.dart';
+import 'package:weather_app/app/features/home/UI/widgets/home_hourly_time_widget.dart';
 import 'package:weather_app/app/features/home/interactor/bloc/home_bloc.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_code_model.dart';
 import 'package:weather_app/app/features/home/interactor/events/weather_event.dart';
 import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
+import 'package:weather_app/app/utils/api.dart';
 import 'package:weather_app/app/widgets/app_appbar_widget.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -76,6 +77,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 100.h,
                     child: HomeHourlyTimeListWidget(weather: state.weather),
                   ),
+                  SizedBox(
+                    height: 10.h,
+                  ),
+                  Text(Env.apiEndpoint)
                 ],
               )
           ])

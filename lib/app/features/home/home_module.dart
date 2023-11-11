@@ -4,7 +4,7 @@ import 'package:weather_app/app/extensions/http/http_extension.dart';
 import 'package:weather_app/app/extensions/location/location_extension.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
 import 'package:weather_app/app/features/home/data/home_impl_service.dart';
-import 'package:weather_app/app/features/home/interactor/UI/home_page.dart';
+import 'package:weather_app/app/features/home/UI/home_page.dart';
 import 'package:weather_app/app/features/home/interactor/bloc/home_bloc.dart';
 import 'package:weather_app/app/features/home/interactor/services/home_service.dart';
 
