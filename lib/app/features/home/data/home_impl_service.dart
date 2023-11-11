@@ -1,17 +1,16 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:weather_app/app/extensions/location/location_extension.dart';
 import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_current_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_hourly_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
 import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
+import 'package:weather_app/app/utils/api.dart';
 
 import '../../../extensions/http/http_extension.dart';
 
 import '../interactor/services/home_service.dart';
 
 class HomeImplService implements HomeService {
-  final String? _baseAPI = dotenv.env['BASE_API'];
   final _defaultParamsURL =
       'current=temperature_2m,is_day,weathercode&hourly=temperature_2m,weathercode';
 
@@ -34,7 +33,7 @@ class HomeImplService implements HomeService {
 
       return getCoordinates.fold((success) async {
         final response = await _httpExtension.get(
-            '${_baseAPI!}/forecast?latitude=${success.position.latitude}&longitude=${success.position.longitude}&$_defaultParamsURL');
+            '${Env.apiEndpoint}/forecast?latitude=${success.position.latitude}&longitude=${success.position.longitude}&$_defaultParamsURL');
 
         if (response.data.isEmpty) {
           return const WeatherErrorState();
