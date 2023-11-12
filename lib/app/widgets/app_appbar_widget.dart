@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:weather_app/app/extensions/themes/change_theme.dart';
-import 'package:weather_app/app/extensions/themes/is_dark_theme.dart';
+import 'package:weather_app/app/core/themes/change_theme.dart';
+import 'package:weather_app/app/core/themes/is_dark_theme.dart';
 
 class AppAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppAppBarWidget({

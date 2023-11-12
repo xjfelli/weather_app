@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:weather_app/app/extensions/log/log_extension.dart';
+import 'package:weather_app/app/core/externals/log/log_extension.dart';
 
 class CustomInterceptors extends Interceptor {
   final LogExtension _log;

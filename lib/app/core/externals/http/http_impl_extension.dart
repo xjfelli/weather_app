@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:weather_app/app/extensions/http/interceptor/dio_interceptor.dart';
+import 'package:weather_app/app/core/externals/http/interceptor/dio_interceptor.dart';
 
 import 'http_extension.dart';
 

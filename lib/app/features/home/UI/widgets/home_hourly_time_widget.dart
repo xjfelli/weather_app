@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:weather_app/app/extensions/utils/helper.dart';
+import 'package:weather_app/app/core/utils/helper.dart';
 import 'package:weather_app/app/features/home/adapter/weather_adapter.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_code_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';

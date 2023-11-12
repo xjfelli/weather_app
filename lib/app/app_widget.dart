@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:weather_app/app/extensions/location/location_extension.dart';
-import 'package:weather_app/app/extensions/themes/themes.dart';
+import 'package:weather_app/app/core/externals/location/location_extension.dart';
+import 'package:weather_app/app/core/themes/themes.dart';
 
 class AppWidget extends StatefulWidget {
   final AdaptiveThemeMode? savedThemeMode;

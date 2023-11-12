@@ -1,6 +1,6 @@
 import 'package:result_dart/result_dart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
+import 'package:weather_app/app/core/externals/shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesImpl implements ISharedPreferences {
   late SharedPreferences _sp;

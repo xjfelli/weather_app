@@ -1,8 +1,8 @@
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:result_dart/result_dart.dart';
-import 'package:weather_app/app/extensions/location/location_entity.dart';
-import 'package:weather_app/app/extensions/location/location_extension.dart';
+import 'package:weather_app/app/core/externals/location/location_entity.dart';
+import 'package:weather_app/app/core/externals/location/location_extension.dart';
 
 class LocationImplExtension implements LocationExtension {
   @override

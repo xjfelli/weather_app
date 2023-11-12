@@ -1,8 +1,8 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:weather_app/app/extensions/bloc/bloc_extension.dart';
-import 'package:weather_app/app/extensions/http/http_extension.dart';
-import 'package:weather_app/app/extensions/location/location_extension.dart';
-import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
+import 'package:weather_app/app/core/configs/bloc/bloc_extension.dart';
+import 'package:weather_app/app/core/externals/http/http_extension.dart';
+import 'package:weather_app/app/core/externals/location/location_extension.dart';
+import 'package:weather_app/app/core/externals/shared_preferences/shared_preferences.dart';
 import 'package:weather_app/app/features/home/data/home_impl_service.dart';
 import 'package:weather_app/app/features/home/UI/home_page.dart';
 import 'package:weather_app/app/features/home/interactor/bloc/home_bloc.dart';

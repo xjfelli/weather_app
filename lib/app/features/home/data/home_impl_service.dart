@@ -1,12 +1,12 @@
-import 'package:weather_app/app/extensions/location/location_extension.dart';
-import 'package:weather_app/app/externals/shared_preferences/shared_preferences.dart';
+import 'package:weather_app/app/core/externals/location/location_extension.dart';
+import 'package:weather_app/app/core/externals/shared_preferences/shared_preferences.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_current_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_hourly_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
 import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
-import 'package:weather_app/app/utils/api.dart';
+import 'package:weather_app/app/core/configs/api.dart';
 
-import '../../../extensions/http/http_extension.dart';
+import '../../../core/externals/http/http_extension.dart';
 
 import '../interactor/services/home_service.dart';
 
