@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "940598816937",
+    "project_id": "my-weather-minimalist-app",
+    "storage_bucket": "my-weather-minimalist-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940598816937:android:c987dda9f4ede289f0f9b8",
+        "android_client_info": {
+          "package_name": "com.xjfelli.weatherminimalist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6vFHu7zlKHHxNB9PDJUXfzzba5nI10hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
