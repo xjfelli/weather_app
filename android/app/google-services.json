@@ -7,28 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:940598816937:android:a0ed8ae825b630a4f0f9b8",
+        "mobilesdk_app_id": "1:940598816937:android:c987dda9f4ede289f0f9b8",
         "android_client_info": {
-          "package_name": "com.example.weather_app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC6vFHu7zlKHHxNB9PDJUXfzzba5nI10hQ"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:940598816937:android:bea21ba2050aba91f0f9b8",
-        "android_client_info": {
-          "package_name": "com.xjfelli.weather_minimalist"
+          "package_name": "com.xjfelli.weatherminimalist"
         }
       },
       "oauth_client": [],

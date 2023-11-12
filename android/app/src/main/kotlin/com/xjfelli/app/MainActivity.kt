@@ -1,4 +1,4 @@
-package com.xjfelli.weather_minimalist
+package com.xjfelli.app
 
 import io.flutter.embedding.android.FlutterActivity
 

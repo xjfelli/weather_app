@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:weather_app/app/core/utils/helper.dart';
@@ -31,29 +32,31 @@ class HomeHourlyTimeListWidget extends StatelessWidget {
             width: 50.w,
             height: 100.h,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(6)),
-            child: Center(
-                child: Column(
-              children: [
-                Text('${temperature.toString()}º'),
-                SizedBox(
-                  height: 2.h,
-                ),
-                FutureBuilder(
-                    future: getWeatherCode(code: weathercode),
-                    builder: (context, snapshot) {
-                      if (!snapshot.hasData) {
-                        return const SizedBox();
-                      }
+            child: FutureBuilder(
+                future: getWeatherCode(code: weathercode),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const SizedBox();
+                  }
 
-                      return Image.network(
-                        WeatherAdapter.isDay(weather.currentWeather.isDay)
-                            ? snapshot.data!.day.image
-                            : snapshot.data!.night.image,
-                      );
-                    }),
-                Text(Helper.formatDatetimeHHMM(time)),
-              ],
-            )),
+                  return CachedNetworkImage(
+                      imageUrl:
+                          WeatherAdapter.isDay(weather.currentWeather.isDay)
+                              ? snapshot.data!.day.image
+                              : snapshot.data!.night.image,
+                      imageBuilder: (context, imageProvider) => Column(
+                            children: [
+                              Text('${temperature.toString()}º'),
+                              SizedBox(
+                                height: 2.h,
+                              ),
+                              Image(
+                                image: imageProvider,
+                              ),
+                              Text(Helper.formatDatetimeHHMM(time)),
+                            ],
+                          ));
+                }),
           );
         });
   }

@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyC6vFHu7zlKHHxNB9PDJUXfzzba5nI10hQ',
-    appId: '1:940598816937:android:bea21ba2050aba91f0f9b8',
+    appId: '1:940598816937:android:c987dda9f4ede289f0f9b8',
     messagingSenderId: '940598816937',
     projectId: 'my-weather-minimalist-app',
     storageBucket: 'my-weather-minimalist-app.appspot.com',
@@ -59,10 +59,10 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyBPn1VS5JLg6Sw2gjbpGezxJzMH6gURpTI',
-    appId: '1:940598816937:ios:91edce41bbe6c5bdf0f9b8',
+    appId: '1:940598816937:ios:094cf176a3561591f0f9b8',
     messagingSenderId: '940598816937',
     projectId: 'my-weather-minimalist-app',
     storageBucket: 'my-weather-minimalist-app.appspot.com',
-    iosBundleId: 'com.example.weatherApp',
+    iosBundleId: 'com.xjfelli.weatherminimalist',
   );
 }

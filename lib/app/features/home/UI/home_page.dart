@@ -9,7 +9,6 @@ import 'package:weather_app/app/features/home/interactor/bloc/home_bloc.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_code_model.dart';
 import 'package:weather_app/app/features/home/interactor/events/weather_event.dart';
 import 'package:weather_app/app/features/home/interactor/states/weather.states.dart';
-import 'package:weather_app/app/core/configs/api.dart';
 import 'package:weather_app/app/widgets/app_appbar_widget.dart';
 
 class MyHomePage extends StatefulWidget {
