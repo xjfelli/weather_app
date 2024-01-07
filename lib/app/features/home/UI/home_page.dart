@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:weather_app/app/features/home/UI/widgets/home_hourly_tomorrow_time_widget.dart';
 import 'package:weather_app/app/features/home/adapter/weather_adapter.dart';
 import 'package:weather_app/app/features/home/UI/widgets/home_header_widget.dart';
-import 'package:weather_app/app/features/home/UI/widgets/home_hourly_time_widget.dart';
+import 'package:weather_app/app/features/home/UI/widgets/home_hourly_time_today_widget.dart';
 import 'package:weather_app/app/features/home/interactor/bloc/home_bloc.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_code_model.dart';
 import 'package:weather_app/app/features/home/interactor/events/weather_event.dart';
@@ -41,45 +42,77 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: const AppAppBarWidget(),
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
-        child: Stack(children: [
-          Container(
-            height: 1.sh,
-            decoration: BoxDecoration(color: Theme.of(context).primaryColor),
-          ),
-          Column(children: [
-            SizedBox(
-              height: 0.14.sh,
+        child: Stack(
+          children: [
+            Container(
+              height: 1.sh,
+              decoration: BoxDecoration(color: Theme.of(context).primaryColor),
             ),
-            if (state is WeatherSuccessState)
-              Column(
-                children: [
-                  HomeHeaderWidget(
-                    weather: state.weather,
-                    futureWeatherCode: getWeatherCode(
-                        code: state.weather.currentWeather.weatherCode),
-                  ),
-                  SizedBox(
-                    height: 50.h,
-                  ),
-                  Text(
-                    'Clima de hora em hora',
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleLarge!
-                        .copyWith(color: Colors.grey[300]),
-                  ),
-                  SizedBox(
-                    height: 10.h,
-                  ),
-                  SizedBox(
-                    width: 1.sw,
-                    height: 100.h,
-                    child: HomeHourlyTimeListWidget(weather: state.weather),
-                  ),
-                ],
-              )
-          ])
-        ]),
+            Column(
+              children: [
+                SizedBox(
+                  height: 0.14.sh,
+                ),
+                if (state is WeatherSuccessState)
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.w),
+                    child: Column(
+                      children: [
+                        HomeHeaderWidget(
+                          weather: state.weather,
+                          futureWeatherCode: getWeatherCode(
+                              code: state.weather.currentWeather.weatherCode),
+                        ),
+                        SizedBox(
+                          height: 50.h,
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              'Hoje',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleLarge!
+                                  .copyWith(color: Colors.grey[300]),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10.h,
+                        ),
+                        SizedBox(
+                          width: 1.sw,
+                          height: 100.h,
+                          child: HomeHourlyTimeTodayListWidget(
+                              weather: state.weather),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              'Amanhã',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .titleLarge!
+                                  .copyWith(color: Colors.grey[300]),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 10.h,
+                        ),
+                        SizedBox(
+                          width: 1.sw,
+                          height: 100.h,
+                          child: HomeHourlyTomorrowTimeListWidget(
+                              weather: state.weather),
+                        )
+                      ],
+                    ),
+                  )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

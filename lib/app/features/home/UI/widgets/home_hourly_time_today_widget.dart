@@ -6,10 +6,10 @@ import 'package:weather_app/app/features/home/adapter/weather_adapter.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_code_model.dart';
 import 'package:weather_app/app/features/home/interactor/entities/weather_model.dart';
 
-class HomeHourlyTimeListWidget extends StatelessWidget {
+class HomeHourlyTimeTodayListWidget extends StatelessWidget {
   final WeatherEntity weather;
 
-  const HomeHourlyTimeListWidget({super.key, required this.weather});
+  const HomeHourlyTimeTodayListWidget({super.key, required this.weather});
 
   Future<WeatherCodeModel?> getWeatherCode({int? code}) async {
     return WeatherAdapter.wmoDescription(code: code);
@@ -18,7 +18,6 @@ class HomeHourlyTimeListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-        padding: EdgeInsets.only(left: 13.w),
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         physics: const BouncingScrollPhysics(),

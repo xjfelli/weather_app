@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
+import 'package:weather_app/app/core/utils/helper.dart';
 
 class WeatherHourlyModel {
   final List<DateTime> time;
@@ -16,19 +17,26 @@ class WeatherHourlyModel {
   List<DateTime> get timeToday {
     List<DateTime> todayDates = [];
     DateTime currentDate = DateTime.now();
-    DateTime oneHourBehindDate = DateTime(currentDate.year, currentDate.month,
-        currentDate.day, currentDate.hour - 1);
-
-    DateTime nextDate = DateTime(currentDate.year, currentDate.month,
-        currentDate.day + 1, currentDate.hour + 1);
 
     for (var dateStr in time) {
-      if (dateStr.isBefore(nextDate) && dateStr.isAfter(oneHourBehindDate)) {
+      if (Helper.isTodayDate(dateStr) && dateStr.isAfter(currentDate)) {
         todayDates.add(dateStr);
       }
     }
 
     return todayDates;
+  }
+
+  List<DateTime> get timeTomorrow {
+    List<DateTime> tomorrowDates = [];
+
+    for (var dateStr in time) {
+      if (Helper.isTomorrowDate(dateStr)) {
+        tomorrowDates.add(dateStr);
+      }
+    }
+
+    return tomorrowDates;
   }
 
   WeatherHourlyModel copyWith({
